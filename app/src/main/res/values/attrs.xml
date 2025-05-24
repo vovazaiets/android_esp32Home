@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTheme">
+        <attr name="customTextColor" format="color" />
+        <attr name="spinnerPopupBackground" format="color" />
+        <attr name="customBackgroundColor" format="color"/>
+        <attr name="customElementColor" format="color"/>
+
+    </declare-styleable>
+</resources>

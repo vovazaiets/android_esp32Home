@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dashboardContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/customBackgroundColor">
+
+    <GridLayout
+        android:id="@+id/dashboardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:padding="16dp"
+        android:layout_marginBottom="98dp"
+        android:orientation="horizontal">
+
+        <!-- Твій існуючий вміст GridLayout тут -->
+        <!-- LED керування -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:background="?attr/customElementColor"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/ledToggleButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="LED"
+                android:textSize="25dp"
+                android:backgroundTint="#2A2A2A"
+                android:textColor="#FFFFFF"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <!-- Температура -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:background="?attr/customElementColor"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/temperatureValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="-- °C"
+                android:textColor="?attr/customTextColor"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Температура"
+                android:textColor="?attr/customTextColor"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Вологість -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:background="?attr/customElementColor"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/humidityValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="-- %"
+                android:textColor="?attr/customTextColor"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Вологість"
+                android:textColor="?attr/customTextColor"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Освітленість -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:background="?attr/customElementColor"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/lightValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-- lux"
+                android:textSize="22sp"
+                android:textColor="?attr/customTextColor"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Освітленість"
+                android:textSize="16sp"
+                android:textColor="?attr/customTextColor" />
+        </LinearLayout>
+
+        <!-- RELE -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:background="?attr/customElementColor"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/rele"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="RELE"
+                android:textSize="25dp"
+                android:backgroundTint="#730000"
+                android:textColor="#FFFFFF"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <!-- Статус ESP32 -->
+        <LinearLayout
+            android:id="@+id/statusContainer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:background="#FF0000"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/statusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Offline"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </GridLayout>
+
+
+
+</FrameLayout>

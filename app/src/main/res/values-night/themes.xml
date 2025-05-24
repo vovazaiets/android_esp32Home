@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Esp32Home" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="android:fontFamily">@font/intro</item>
+        <item name="customTextColor">#FDFDFD</item>
+        <item name="customBackgroundColor">#070000</item>
+        <item name="customElementColor">#212121</item>
+
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+</resources>

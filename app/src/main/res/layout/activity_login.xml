@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity=""
+    android:background="@drawable/back">
+
+    <!-- ДОДАНА КАРТИНКА ЗГОРИ -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/logo"
+    android:scaleType="centerInside" />
+
+    <!-- Поля для авторизації -->
+    <EditText
+        android:id="@+id/usernameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adafruit Username"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/apiKeyInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adafruit IO Key"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#180000"
+        android:text="Login"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
