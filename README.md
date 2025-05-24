@@ -2,10 +2,12 @@
 
 
 ![зображення](https://github.com/user-attachments/assets/05b9bb72-6aab-4ae9-ab7d-0c2299e76fd3)
+
 **Dasboard:**
 
 
 ![зображення](https://github.com/user-attachments/assets/15af4130-d06a-4273-9105-205730034316)
+
 **Settings:**
 
 
